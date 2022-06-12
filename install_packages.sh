@@ -24,6 +24,12 @@ pacman -Sy --needed --noconfirm \
 	dtc brotli axel gawk detox clang gcc gcc-libs \
 	flatpak
 
+# Symlinks for python an
+ln -sf /usr/bin/pip3.10 /usr/bin/pip3
+ln -sf /usr/bin/pip3.10 /usr/bin/pip
+ln -sf /usr/bin/python3.10 /usr/bin/python3
+ln -sf /usr/bin/python3.10 /usr/bin/python
+
 # python3 and pip3 version
 python3 --version; pip3 --version
 
