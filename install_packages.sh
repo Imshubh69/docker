@@ -15,7 +15,7 @@ pacman -Sy --needed --noconfirm \
 	libelf base-devel openssh lz4 jq go ncurses \
 	bison flex ninja uboot-tools z3 glibc dpkg \
 	multilib-devel bc htop python-setuptools   \
-	util-linux man pv
+	util-linux man pv patchelf
 
 # More Packages
 pacman -Sy --needed --noconfirm \
