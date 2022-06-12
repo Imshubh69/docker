@@ -9,7 +9,7 @@ pacman -Syyu --needed --noconfirm 2>&1 | grep -v "warning: could not get file in
 # Install Basic Packages
 pacman -Sy --needed --noconfirm \
 	sudo nano git curl wget rsync aria2 rclone \
-         python3 python-pip zip unzip cmake \
+        python3 python-pip zip unzip cmake \
 	make neofetch speedtest-cli inetutils cpio \
 	jdk-openjdk lzip dpkg openssl ccache repo \
 	libelf base-devel openssh lz4 jq go ncurses \
@@ -24,17 +24,17 @@ pacman -Sy --needed --noconfirm \
 	dtc brotli axel gawk detox clang gcc gcc-libs \
 	flatpak
 
-# python and pip version
-python --version; pip --version
+# python3 and pip3 version
+python3 --version; pip3 --version
 
-# Install Some pip packages
-pip install \
+# Install Some pip3 packages
+pip3 install \
 	twrpdtgen telegram-send backports.lzma docopt \
 	extract-dtb protobuf pycrypto docopt zstandard \
 	setuptools
 
-# pip git packages
-pip install \
+# pip3 git packages
+pip3 install \
 	git+https://github.com/samloader/samloader.git
 
 # Create a non-root user for AUR
