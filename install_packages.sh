@@ -9,13 +9,13 @@ pacman -Syyu --needed --noconfirm 2>&1 | grep -v "warning: could not get file in
 # Install Basic Packages
 pacman -Sy --needed --noconfirm \
 	sudo nano git curl wget rsync aria2 rclone \
-	python2 python3 python-pip zip unzip cmake \
+         python3 python-pip zip unzip cmake \
 	make neofetch speedtest-cli inetutils cpio \
-	jdk8-openjdk lzip dpkg openssl ccache repo \
+	jdk-openjdk lzip dpkg openssl ccache repo \
 	libelf base-devel openssh lz4 jq go ncurses \
 	bison flex ninja uboot-tools z3 glibc dpkg \
 	multilib-devel bc htop python-setuptools   \
-	util-linux man
+	util-linux man pv
 
 # More Packages
 pacman -Sy --needed --noconfirm \
@@ -51,5 +51,3 @@ sudo chmod -R a+rwx .
 sudo -u testuser bash ./aosp-build-env.sh
 cd -
 
-# Use python2 by default
-ln -sf /usr/bin/python{2,}
